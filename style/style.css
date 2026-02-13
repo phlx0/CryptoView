@@ -1,0 +1,14 @@
+Screen {
+  layout: horizontal;
+}
+#sidebar {
+  width: 30%;
+  border: solid cyan;
+  padding: 1;
+}
+#details {
+  width: 70%;
+  border: solid cyan;
+  padding: 2;
+  height: 100%;
+}
