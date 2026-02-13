@@ -40,7 +40,7 @@ CryptoApp/
 ├── utils/
 │   └── charts.py             # Candlestick chart generator
 └── models/
-└── coin.py               # Coin data model (dataclass)
+    └── coin.py               # Coin data model (dataclass)
 ```
 
 ---
