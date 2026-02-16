@@ -105,7 +105,3 @@ python3 main.py
 
 MIT License © 2026
 See [License](LICENSE)
-
----
-
-Made with ❤️ Python + Textual
