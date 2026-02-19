@@ -19,8 +19,10 @@
   - 24h high / low
   - All-time high / low
   - 7-day ASCII candlestick chart
+
 - Dynamic candlestick chart with adjustable width
 - Modular, maintainable project structure
+- ⚡ One-command setup via `install.sh`
 
 ---
 
@@ -30,6 +32,7 @@
 CryptoApp/
 │
 ├── main.py                   # Entry point
+├── install.sh                # Automated setup script
 ├── requirements.txt          # Dependencies
 ├── style/
 │   └── style.css             # Terminal UI styling
@@ -39,13 +42,42 @@ CryptoApp/
 │   └── crypto_service.py     # API requests to CoinGecko
 ├── utils/
 │   └── charts.py             # Candlestick chart generator
-└── models/
-└── coin.py               # Coin data model (dataclass)
+├── models/
+│   └── coin.py               # Coin data model (dataclass)
+└── docs/
+    └── preview.png           # App preview image
 ```
 
 ---
 
 ## ⚡ Installation
+
+### 🔥 Quick Setup (Recommended)
+
+Use the automated installer:
+
+```bash
+chmod +x install.sh
+./install.sh
+```
+
+The script will:
+
+- Create a virtual environment (if it doesn’t exist)
+- Activate it
+- Upgrade `pip`
+- Install all dependencies
+- Display a clean setup confirmation
+
+Once completed, run:
+
+```bash
+source venv/bin/activate && python3 main.py
+```
+
+---
+
+### 🛠 Manual Installation
 
 1. Clone the repository:
 
@@ -68,19 +100,20 @@ venv\Scripts\activate      # Windows
 pip install -r requirements.txt
 ```
 
----
-
-## 🏃 Usage
-
-Run the app:
+4. Run the app:
 
 ```bash
 python3 main.py
 ```
 
+---
+
+## 🏃 Usage
+
 - Left panel: list of top cryptocurrencies
-- Select a coin to view detailed info and 7-day candlestick chart
-- Candlestick chart is rendered in ASCII for a terminal-friendly experience
+- Select a coin to view detailed info
+- 7-day candlestick chart rendered in ASCII
+- Fully terminal-native UI powered by Textual
 
 ---
 
@@ -98,6 +131,7 @@ python3 main.py
 - Sparklines in coin list preview
 - Multi-currency support (USD, EUR, BTC)
 - Auto-refresh for live market updates
+- Windows-compatible install script
 
 ---
 
